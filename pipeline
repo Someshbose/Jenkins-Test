@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
 				withMaven(maven : 'Maven_3_8_1'){
-					sh 'mvn --version'
+					bat 'mvn --version'
 				}
             }
         }
